@@ -1,0 +1,252 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>test2</title>
+  <style>
+         nav .badge{
+             position: relative;
+             top:20px;
+             right: 30px;
+         }
+     </style>
+</head>
+
+
+<body>
+	<header>
+		<nav class="nav-extended">
+		 <div class="nav-wrapper">
+			<div class="container">
+			 <div class="nav-content">
+				<span class="nav-title center">SOCIALE BIBLIOTHEQUE</span>
+				<a href="index.html" class="right">déconnexion</a>
+			</div>
+			</div>
+		</div>	
+			
+		</nav>
+		
+	</header>
+  <div class="container">
+    <div class="row">
+
+      <div class="col s12 l12">
+        <ul class="tabs">
+          <li class="tab col s6 l3">
+            <a href="#membre" class="indigo-text text-4">Voir membres  <i class="material-icons">add</i></a>
+          </li>
+          <li class="tab col s6 l3">
+            <a href="#rendezvous" class="indigo-text text-4">Creer rendez vous <i class="material-icons">add</i></a>
+          </li>
+          <li class="tab col s6 l3">
+            <a href="#notification" class="indigo-text text-4">Notification
+			<i class="material-icons">add</i>
+			<span class="badge white-text red new ">2</span></li></a>
+          </li>
+			
+          <li class="tab col s6 l3">
+            <a href="#ajoutlivre" class="indigo-text text-4">Ajout d'un livre <i class="material-icons">add</i></a>
+          </li>
+        </ul>
+
+        <div class="col s12 l12" id="membre">
+          
+			<table class="bordered striped centered">
+            <thead>
+              <tr>
+                <th data-field="id">Id Membre</th>
+                <th data-field="titre">Nom de membre</th>
+				<th data-field="titre">sexe de membre</th>
+                <th data-field="data">Adresse membre</th>
+				<th data-field="data">bloquer membre</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>vumisa cédric</td>
+                <td>m</td>
+				<td>ky tuc xa 144</td>
+				<td><a href="#" class="btn-floating Red pulse">
+                <i class="material-icons">remove</i>
+            </a></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>mamba denis</td>
+                <td>m</td>
+				<td>ky tuc xa 144</td>
+				<td><a href="#" class="btn-floating Red pulse">
+                <i class="material-icons">remove</i>
+            </a></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>kambu fabien</td>
+                <td>m</td>
+				<td>ky tuc xa 144</td>
+				<td><a href="#" class="btn-floating Red pulse">
+                <i class="material-icons">remove</i>
+            </a></td>
+              </tr>
+			  <tr>
+                <td>4</td>
+                <td>Truong tim</td>
+                <td>m</td>
+				<td>ky tuc xa 144</td>
+				<td><a href="#" class="btn-floating Red pulse">
+                <i class="material-icons">remove</i>
+            </a></td>
+              </tr>
+            </tbody>
+         </table>
+		
+          
+          
+        </div>
+        <div class="col s12 " id="rendezvous">
+			<div class="col s12 l6">
+              <form action="">
+                <div class="input-field">
+                  <i class="material-icons prefix">face</i>
+                  <input type="text" id="auteur">
+                  <label for="auteur">Auteur du livre</label>
+                </div>
+				<div class="input-field">
+                  <i class="material-icons prefix">menu_book</i>
+                  <input type="text" id="book">
+                  <label for="book">Livre concerné</label>
+                </div>
+				<div class="input-field">
+                  <i class="material-icons prefix">place</i>
+                  <input type="text" id="lieu">
+                  <label for="lieu">Lieu du rendez vous</label>
+                </div>
+				<div class="input-field">
+                  <i class="material-icons prefix">face</i>
+                  <input type="text" id="abonne">
+                  <label for="abonne">Abonné concerné</label>
+                </div>
+				<div class="input-field">
+                  <i class="material-icons prefix">date_range</i>
+                  <input type="text" id="date">
+                  <label for="date">date rendez vous</label>
+                </div>
+
+                
+                <div class="input-field center">
+                  <button class="btn">valider</button>
+                </div>
+              </form>
+            </div>
+         
+        </div>
+
+        <div class="col s12 " id="notification">
+          
+		 
+         <table class="bordered striped centered">
+            <thead>
+              <tr>
+                <th data-field="id">Id livre</th>
+                <th data-field="titre">Titre livre</th>
+                <th data-field="data">Date Demande Emprunt</th>
+				<th data-field="data">Abonné concerné</th>
+				<th data-field="data">Approuver</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>44</td>
+                <td>histoire de vietnam</td>
+                <td>11/08/2020</td>
+				<td>kambu fabien</td>
+				<td><a href="#" class="btn-floating blue pulse">
+                <i class="material-icons">add</i>
+            </a></td>
+              </tr>
+              <tr>
+                <td>44</td>
+                <td>histoire de vietnam</td>
+                <td>11/08/2020</td>
+				<td>mamba denis</td>
+				<td><a href="#" class="btn-floating blue pulse">
+                <i class="material-icons">add</i>
+            </a></td>
+              </tr>
+              <tr>
+                <td>44</td>
+                <td>histoire de vietnam</td>
+                <td>11/08/2020</td>
+				<td>Truong tim</td>
+				<td><a href="#" class="btn-floating blue pulse">
+                <i class="material-icons">add</i>
+            </a></td>
+              </tr>
+            </tbody>
+         </table>
+        </div>
+        
+
+		
+		<div class="col s12 " id="ajoutlivre">
+          
+              <form action="">
+                <div class="input-field">
+                  <i class="material-icons prefix">share</i>
+                  <input type="text" id="share">
+                  <label for="share">Lien de livre</label>
+                </div>
+				<div class="input-field">
+                  <i class="material-icons prefix">menu_book</i>
+                  <input type="text" id="book">
+                  <label for="book">Livre concerné</label>
+                </div>
+				<div class="input-field">
+                  <i class="material-icons prefix">face</i>
+                  <input type="text" id="auteur">
+                  <label for="auteur">Auteur du livre</label>
+                </div>
+				<div class="input-field">
+                  <i class="material-icons prefix">face</i>
+                  <input type="text" id="abonne">
+                  <label for="abonne">Abonné concerné</label>
+                </div>
+				<div class="input-field">
+                  <i class="material-icons prefix">message</i>
+                  <textarea name="" id="message1" class="materialize-textarea"></textarea>
+                  <label for="message1">Description du livre</label>
+                </div>
+
+                
+                <div class="input-field center">
+                  <button class="btn">valider</button>
+                </div>
+              </form>
+           
+			
+		</div>
+      
+    </div>
+  </div>
+  
+  
+  
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        $('.tabs').tabs();
+    });
+  </script>
+</body>
+</html>

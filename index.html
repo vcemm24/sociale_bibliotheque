@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>social biblio</title>
+    <style>
+      
+         p{
+          text-align: justify;
+        }
+		.ok{
+			position:relative;
+			top:85px;
+		
+		}
+        
+    </style>
+
+
+</head>
+<body>
+	<header>
+		<nav class="nav-extended">
+		 <div class="nav-wrapper">
+			<div class="container">
+			 <div class="nav-content">
+				<span class="nav-title center">SOCIALE BIBLIOTHEQUE</span>
+			</div>
+			</div>
+		</div>	
+			
+		</nav>
+		
+	</header>
+  <!-- navbar 
+  <header>
+    <nav class="nav-wrapper transparent">
+        <div class="container">
+          <div class="row">
+              <div class="col s12 l12 ">
+                  <h1>SOCIAL BIBLIOTHEQUE</h1>
+              </div>
+          </div>
+        </div>
+    </nav>
+  </header>-->
+  
+  <!-- photo / grid -->
+
+  <section class="container section">
+    <div class="row">
+      <div class="col s12 l6">
+        <h4 class="indigo-text text-darken-4">A propos des activités du site</h4>
+       
+          <p>Nous avons mis en place le présent site dans le souci de promouvoir la culture au sein d’une communauté dont les différentes activités sont énumérées ci-dessous :
+-	Créations des comptes membres afin d’avoir accès aux différents services du site.
+-	Offrent les possibilités des postés des bouquins pour les futurs empreints des membres.
+-	Permettent une vue de l’ensemble des bouquins disponible au sein de la communauté.
+-	Offrent les possibilités d’effectués des emprunts des bouquins disponible aux membres
+-	Planifier les rendez-vous des membres désirant un bouquin et le propriétaire de ce dernier. 
+-	Permettre les mises à jour des différentes activités des membres.
+</p><p>Le projet qui nous allons développer dans ce travail est de mettre en place
+une application de gestion des prêts des ouvrages dans une communauté. Donc,
+l’objectif est de concevoir et développer un logiciel en utilisant la technologie web.
+L’application ainsi développée va permettre aux membres de crées des comptes, des
+postés leurs ouvrages, de visualiser les ouvrages disponibles et de formuler de
+demander si nécessaire, mais aussi effectuait des rencontres entrent membres dont les
+intérêts vont converger.</p></div>
+      <div class="ok col s12 l6">
+        <img src="img/book2.jpg" alt="" class="responsive-img">
+      </div>
+
+    </div>
+  </section>
+  
+
+  <!-- parallax -->
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/book1.jpg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+  <!-- services / tabs -->
+  
+
+  <!-- parallax -->
+  
+  <!-- contact form -->
+  <section class="container section">
+    <div class="row">
+      <div class="col s12 m6 l6 insc">
+        <h4 class="indigo-text text-darken-4">Concernant Inscription au site</h4>
+       
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias excepturi eveniet voluptas adipisci voluptatibus quos laudantium velit fuga officiis odio dicta suscipit inventore perspiciatis dolor reprehenderit pariatur, consequatur, ipsam eos.</p>  
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda voluptatibus dignissimos fuga enim numquam autem natus ullam, dolore fugit quae ea perferendis qui facere cumque illo corrupti dolores. Corrupti, tempore?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ducimus quo, cupiditate provident dicta dolore vitae facilis harum qui, deserunt eligendi molestiae! Iusto placeat id est! Dicta tempora reiciendis magni!</p>
+      </div>
+      <div class="col s12 m6 l6">
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <h4 class="indigo-text text-darken-4 center">Déjà inscrit</h4>
+              <form action="traite.php" method="post">
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" id="mail" name="email">
+                  <label for="mail">Ton adresse mail</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">vpn_key</i>
+                  <input type="password" id="pass" name="pass">
+                  <label for="pass">Ton mot de passe</label>
+                </div>
+                <div class="innput-field center">
+                  <button class="btn" name="connecter">Se connecter</button>
+                </div>
+              </form>
+            </div>
+            <div class="col s12 m12 l12">
+              <h4 class="indigo-text text-darken-4 center">Inscription</h4>
+              <form action="traite.php" method="post">
+                <div class="input-field">
+                  <i class="material-icons prefix">face</i>
+                  <input type="text" id="nom">
+                  <label for="nom" >Ton Nom</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">email</i>
+                  <input type="email" class="validate" id="mail">
+                  <label for="mail"data-error="Email invalide" data-success="Email valide">Ton adresse mail</label>
+                </div>
+                <div class="input-field">
+                  <i class="material-icons prefix">vpn_key</i>
+                  <input type="password" id="pass">
+                  <label for="pass">Ton mot de passe</label>
+                </div>
+                <div class="innput-field center">
+                  <button class="btn">S'inscrire</button>
+               </div>
+              </form> 
+          </div>
+      </div>
+    </div>  
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l6">
+          <h5>A propos de nous</h5>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam corporis, expedita alias saepe odit excepturi eum nam repudiandae maxime porro dolorum numquam explicabo hic perferendis earum voluptas temporibus harum reiciendis.</p>
+           </div>
+        <div class="col s12 l4 offset-l2">
+          <h5>Autres liens</h5>
+          <ul class="">
+            <li><a href="" class="btn-floating btn-small indigo darken-4">
+              <i class="fab fa-instagram"></i>
+            </a></li>
+            <li><a href="" class="btn-floating btn-small indigo darken-4">
+              <i class="fab fa-facebook"></i>
+            </a></li>
+            <li><a href="" class="btn-floating btn-small indigo darken-4">
+              <i class="fab fa-twitter"></i>
+            </a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy;2020 Groupe4</div>
+    </div>
+  </footer>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+       $('.parallax').parallax();
+    });
+  </script>
+</body>
+</html>
